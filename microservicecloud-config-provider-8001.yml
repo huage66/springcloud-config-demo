@@ -1,4 +1,4 @@
-﻿server:
+server:
   port: 8001
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
@@ -7,7 +7,7 @@ mybatis:
 spring:
   application:
   profiles: dev
-    name: microservicecloud-dept    #非常重要,该配置就是对外暴露的服务2名称
+    name: microservicecloud-config-provider-8001    #非常重要,该配置就是对外暴露的服务2名称
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #Druid数据源
     driver-class-name: org.gjt.mm.mysql.Driver #mysql驱动包
@@ -47,7 +47,7 @@ mybatis:
 spring:
   application:
   profiles: test
-    name: microservicecloud-dept    #非常重要,该配置就是对外暴露的服务2名称
+    name: microservicecloud-config-provider-8001    #非常重要,该配置就是对外暴露的服务2名称
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #Druid数据源
     driver-class-name: org.gjt.mm.mysql.Driver #mysql驱动包
